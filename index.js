@@ -7,6 +7,7 @@ function getJoke() {
       const joke = data.data.content;
 
       next.style.display = "none";
+      header.classList.remove("search");
       header.textContent = joke.text_head;
       if (joke.text_hidden) {
         res.style.display = null;
@@ -27,6 +28,7 @@ function getJoke() {
 getJoke();
 
 next.addEventListener("click", () => {
+  header.classList.add("search");
   header.textContent = "Recherche d'une blague...";
   content.textContent = "";
   getJoke();

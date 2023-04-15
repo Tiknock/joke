@@ -54,3 +54,8 @@ h1 {
 #next:hover, .showRes:hover {
   transform: scale(1.1);
 }
+
+.search {
+  font-size: 1rem;
+  color: #16A085;
+}
